@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox cbMusica, cbCine, cbDeporte, cbComida;
     private Spinner spEquipoFutbol;
     private Button  btnOpenCalculator;
+//    Santiago Franco De La Rosa - 2155080 Autor
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
