@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Taller Eventos</string>
+    <string-array name="equipos_futbol">
+        <item>América</item>
+        <item>Barcelona</item>
+        <item>Real Madrid</item>
+        <item>Boca Juniors</item>
+    </string-array>
+</resources>

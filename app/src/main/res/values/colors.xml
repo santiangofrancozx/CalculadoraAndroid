@@ -1,0 +1,9 @@
+<resources>
+    <color name="background_color">#78716c</color>
+    <color name="text_color">#292524</color>
+    <color name="edittext_background_dark">#d6d3d1</color> <!-- Ejemplo de color oscuro -->
+    <color name="button_background">#4CAF50</color> <!-- Color para los botones -->
+    <color name="background_dark">#121212</color> <!-- Fondo oscuro general -->
+    <color name="white">#FFFFFF</color> <!-- Color blanco -->
+
+</resources>

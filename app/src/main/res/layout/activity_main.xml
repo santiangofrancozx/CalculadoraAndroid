@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/background_color">
+
+        <!-- Nombre y Apellido -->
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"/>
+
+        <EditText
+            android:id="@+id/et_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Código con botón de Buscar al lado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Campo Código -->
+            <EditText
+                android:id="@+id/et_codigo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Código"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rounded_edittext"/>
+
+            <!-- Botón Buscar -->
+            <Button
+                android:id="@+id/btn_buscar_codigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar"
+                android:background="@color/button_background"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Documento -->
+        <EditText
+            android:id="@+id/et_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Documento"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Edad -->
+        <EditText
+            android:id="@+id/et_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Dirección -->
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Nacimiento -->
+        <EditText
+            android:id="@+id/et_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nacimiento (dd/mm/yyyy)"
+            android:inputType="date"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Estado civil -->
+        <RadioGroup
+            android:id="@+id/rg_estado_civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <RadioButton
+                android:id="@+id/rb_casado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casado"
+                android:textColor="@color/text_color"/>
+            <RadioButton
+                android:id="@+id/rb_soltero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soltero"
+                android:textColor="@color/text_color"/>
+        </RadioGroup>
+
+        <!-- Género -->
+        <RadioGroup
+            android:id="@+id/rg_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:textColor="@color/text_color"/>
+            <RadioButton
+                android:id="@+id/rb_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:textColor="@color/text_color"/>
+        </RadioGroup>
+
+        <!-- Gustos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gustos"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cb_musica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musica"
+                android:textColor="@color/text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_deporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deporte"
+                android:textColor="@color/text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_cine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cine"
+                android:textColor="@color/text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_comida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comida"
+                android:textColor="@color/text_color"/>
+        </LinearLayout>
+
+        <!-- Equipo de fútbol favorito -->
+        <Spinner
+            android:id="@+id/sp_equipo_futbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/equipos_futbol"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Otros campos -->
+        <EditText
+            android:id="@+id/et_pelicula_favorita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Película Favorita"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_color_favorito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color Favorito"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_comida_favorita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comida Favorita"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_libro_favorito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Libro Favorito"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_cancion_favorita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Canción Favorita"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Descripción personal -->
+        <EditText
+            android:id="@+id/et_descripcion_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción personal"
+            android:lines="5"
+            android:gravity="top|start"
+            android:textColor="@color/text_color"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botones Guardar, Ver Contactos y Calculadora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="@color/button_background"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonVerContactos"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@color/button_background"
+                android:text="Ver Contactos"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_calculadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculadora"
+                android:background="@color/button_background"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
